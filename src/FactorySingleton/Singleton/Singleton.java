@@ -1,4 +1,4 @@
-package Singleton;
+package FactorySingleton.Singleton;
 
 public class Singleton {
     private static final Singleton instance = new Singleton();

@@ -1,6 +1,6 @@
-package Prod;
+package FactorySingleton.Prod;
 
-import Abstract.Product;
+import FactorySingleton.Abstract.Product;
 
 public class ProductFactory{
     private String product;

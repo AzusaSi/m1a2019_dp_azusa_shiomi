@@ -1,9 +1,9 @@
-package Prod;
+package FactorySingleton.Prod;
 
-import Abstract.Product;
-import Singleton.Singleton;
+import FactorySingleton.Abstract.Product;
+import FactorySingleton.Singleton.Singleton;
 
-public class ProductA implements Product{
+public class ProductA implements Product {
 
     @Override
     public Product createProduct() {
