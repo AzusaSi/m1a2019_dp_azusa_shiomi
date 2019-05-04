@@ -11,7 +11,7 @@ public class Client implements IVisitable {
     private List<Commande> commandes = new ArrayList<>();
 
     public void accept(IVisitor visitor){
-
+        visitor.visit(this);
     }
 
     public String getName(){
@@ -24,5 +24,9 @@ public class Client implements IVisitable {
 
     public Client(String name){
         this.name = name;
+    }
+
+    public String toString(){
+        return "Client{"+"name='"+name+'\''+'}';
     }
 }

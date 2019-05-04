@@ -11,7 +11,7 @@ public class Commande implements IVisitable{
     private List<Ligne> lignes = new ArrayList<Ligne>();
 
     public void accept(IVisitor visitor){
-
+        visitor.visit(this);
     }
 
     public String getName(){
@@ -30,5 +30,9 @@ public class Commande implements IVisitable{
     public Commande(String name, String ligneName){
         this.name =name;
         this.addLigne(new Ligne(ligneName));
+    }
+
+    public String toString(){
+        return "Commande{"+"name='"+name+'\''+'}';
     }
 }

@@ -7,7 +7,7 @@ public class Ligne implements IVisitable {
     private String name;
 
     public void accept(IVisitor visitor){
-
+        visitor.visit(this);
     }
 
     public String getName(){
@@ -16,5 +16,9 @@ public class Ligne implements IVisitable {
 
     public Ligne(String name){
         this.name = name;
+    }
+
+    public String toString(){
+        return "Ligne{"+"name='"+name+'\''+'}';
     }
 }
