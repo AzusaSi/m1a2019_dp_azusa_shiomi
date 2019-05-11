@@ -24,6 +24,6 @@ public class Fichier implements Operation{
     }
 
     public void removeFichier(){
-        System.out.println(name + "was removed");
+        System.out.println(name + " was removed");
     }
 }

@@ -10,6 +10,11 @@ public class Repertoire implements Operation{
     private String id;
     private List<Operation> listFichiers = new ArrayList<Operation>();
 
+    public Repertoire(String name,String id){
+        this.name = name;
+        this.id = id;
+        listFichiers = new ArrayList<Operation>();
+    }
     public void addFichier(Operation operation){
         listFichiers.add(operation);
     }
@@ -20,7 +25,7 @@ public class Repertoire implements Operation{
             Operation opr = itr.next();
             opr.removeFichier();
         }
-        System.out.println(name + "was removed");
+        System.out.println(name + " was removed");
     }
 
     @Override
